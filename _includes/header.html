@@ -8,7 +8,7 @@
     <p><i class="home icon"></i>From Rio de Janeiro / Brazil <i class="br flag"></i></p>
   </div>
   <div class="info">
-    <p class="age"><span><b><%= current_age_years %></b> years old</span></p><p class="experience"><b><%= current_experience_years %>+</b> years/experience</p>
+    <p class="age"><span><b class="current_age_years">30</b> years old</span></p><p class="experience"><b class="current_experience_years">11+</b> years/experience</p>
   </div>
   <div class="contacts">
     <span>
@@ -23,16 +23,16 @@
     </span>
   </div>
   <div class="menu">
-    <a href="<%= about_me_path %>" class="tab <%= is_selected?("about_me") %>" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="About Me">
+    <a href="/" class="tab {% if page.id == "about-me" %}selected{% endif %}">
       <i class="user icon"></i> About Me
     </a>
-    <a href="<%= talks_and_presentations_path %>" class="tab <%= is_selected?("talks") %>" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="Talks and Presentations">
+    <a href="/talks.html" class="tab {% if page.id == "talks" %}selected{% endif %}">
       <i class="talk outline icon"></i> Talks and Presentations
     </a>
-    <a href="/blog" target="_blank" class="tab" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="Blog">
+    <a href="/blog" target="_blank" class="tab">
       <i class="comments outline icon"></i> Blog <i class="us flag"></i>(Work in progress)
     </a>
-    <a href="/blogwp.html" target="_blank" class="tab" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="Blog Deprecated">
+    <a href="/blogwp.html" target="_blank" class="tab">
       <i class="comments outline icon"></i> Blog <i class="br flag"></i>(Deprecated)
     </a>
   </div>
