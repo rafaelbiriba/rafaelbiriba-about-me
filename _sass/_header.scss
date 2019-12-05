@@ -1,0 +1,142 @@
+header.header {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  height: 100%;
+
+  .gravatar {
+    margin-top: 1em;
+    width: 300px;
+  }
+
+  .name {
+    text-align: center;
+    font-size: 2.2em;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .position {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    text-transform: uppercase;
+  }
+
+  .details {
+    padding-left: 10px;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+  }
+
+  .info {
+    text-align: center;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0.2em 0;
+    margin-left: -1em;
+    margin-bottom: 20px;
+    width: calc(100% + 2em);
+    display: inline-block;
+    height: auto;
+    text-transform: uppercase;
+
+    .age, .experience {
+      padding: 0.7em 0 0.5em 0;
+      width: 50%;
+      display: inline-block;
+      height: 100%;
+      line-height: 2em;
+      margin: 0;
+
+      b {
+        font-size: 2em;
+        display: block;
+      }
+    }
+
+    .age {
+      border-style: solid;
+      border-color: #ccc;
+      border-width: 0 0.2em 0 0;
+
+    }
+  }
+
+  .contacts {
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+      display: inline-block;
+    }
+
+    a {
+      color: #666;
+      display: inline-block;
+      text-align: center;
+      font-size: 0.7em;
+      line-height: 1em;
+      margin: 0 6px;
+
+      &:hover {
+        color: #000;
+      }
+
+      .icon {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 4em;
+        line-height: 1em;
+      }
+    }
+  }
+
+  .menu {
+    border-style: solid;
+    border-color: #999;
+    border-width: 0.2em 0;
+    margin-left: -1em;
+    margin-bottom: 20px;
+    width: calc(100% + 2em);
+
+    .tab {
+      font-size: 1.1em;
+      padding: 20px;
+      border-bottom: #999 solid 0.2rem;
+      line-height: 2em;
+      display: block;
+      color: #666;
+
+      &:hover {
+        color: #000;
+        background-color: #ddd;
+      }
+
+      &.selected {
+        color: #000;
+        background-color: #999;
+      }
+
+      .icon {
+        font-size: 2em;
+        vertical-align: top;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+  }
+}

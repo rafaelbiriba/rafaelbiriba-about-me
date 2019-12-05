@@ -1,0 +1,39 @@
+<header class="header six wide column">
+  <img class="ui centered circular image gravatar" src="https://www.gravatar.com/avatar/81d01f418d9288c14a94cd21b086156e?s=300" />
+  <h2 class="name">Rafael Biriba</h2>
+  <p class="position">Lead Backend Developer</p>
+  <div class="details">
+    <p><i class="suitcase icon"></i>Working at Blacklane</p>
+    <p><i class="marker icon"></i>Lives in Berlin / Germany <i class="de flag"></i></p>
+    <p><i class="home icon"></i>From Rio de Janeiro / Brazil <i class="br flag"></i></p>
+  </div>
+  <div class="info">
+    <p class="age"><span><b><%= current_age_years %></b> years old</span></p><p class="experience"><b><%= current_experience_years %>+</b> years/experience</p>
+  </div>
+  <div class="contacts">
+    <span>
+      <a href="https://www.linkedin.com/in/rafaelbiriba" title="LinkedIn" target="_blank" data-ga-click-event-category="Header" data-ga-click-event-action="Contacts" data-ga-click-event-detail="LinkedIn"><i class="linkedin square icon"></i>LinkedIn</a>
+      <a href="https://github.com/rafaelbiriba" title="Github" target="_blank" data-ga-click-event-category="Header" data-ga-click-event-action="Contacts" data-ga-click-event-detail="Github"><i class="github square icon"></i>Github</a>
+      <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#105;&#114;&#105;&#98;&#97;&#114;&#106;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;' title="Email" target="_blank" data-ga-click-event-category="Header" data-ga-click-event-action="Contacts" data-ga-click-event-detail="Email"><i class="mail icon"></i>Email</a>
+    </span>
+    <span>
+      <a href="https://www.facebook.com/rafaelbiribarj" title="Facebook" target="_blank" data-ga-click-event-category="Header" data-ga-click-event-action="Contacts" data-ga-click-event-detail="Facebook"><i class="facebook icon"></i>Facebook</a>
+      <a href="https://twitter.com/rafaelbiriba" title="Twitter" target="_blank" data-ga-click-event-category="Header" data-ga-click-event-action="Contacts" data-ga-click-event-detail="Twitter"><i class="twitter square icon"></i>Twitter</a>
+      <a href="http://www.slideshare.net/rafaelbiriba" title="Slideshare" target="_blank" data-ga-click-event-category="Header" data-ga-click-event-action="Contacts" data-ga-click-event-detail="Slideshare"><i class="slideshare icon"></i>Slideshare</a>
+    </span>
+  </div>
+  <div class="menu">
+    <a href="<%= about_me_path %>" class="tab <%= is_selected?("about_me") %>" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="About Me">
+      <i class="user icon"></i> About Me
+    </a>
+    <a href="<%= talks_and_presentations_path %>" class="tab <%= is_selected?("talks") %>" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="Talks and Presentations">
+      <i class="talk outline icon"></i> Talks and Presentations
+    </a>
+    <a href="/blog" target="_blank" class="tab" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="Blog">
+      <i class="comments outline icon"></i> Blog <i class="us flag"></i>(Work in progress)
+    </a>
+    <a href="/blogwp.html" target="_blank" class="tab" data-ga-click-event-category="Header" data-ga-click-event-action="Menu" data-ga-click-event-detail="Blog Deprecated">
+      <i class="comments outline icon"></i> Blog <i class="br flag"></i>(Deprecated)
+    </a>
+  </div>
+</header>
