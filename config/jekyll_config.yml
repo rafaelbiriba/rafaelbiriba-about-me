@@ -1,4 +1,7 @@
 url: "https://rafaelbiriba.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+exclude:
+  - lib
+
 sass:
   sass_dir: _sass
