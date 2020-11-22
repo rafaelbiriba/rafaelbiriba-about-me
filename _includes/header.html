@@ -27,10 +27,10 @@
     </span>
   </div>
   <div class="menu">
-    <a href="/" class="tab {% if page.id == "about-me" %}selected{% endif %}">
+    <a href="{{ site.url }}{{ site.baseurl }}/" class="tab {% if page.id == "about-me" %}selected{% endif %}">
       <i class="user icon"></i> About Me
     </a>
-    <a href="/talks.html" class="tab {% if page.id == "talks" %}selected{% endif %}">
+    <a href="{{ site.url }}{{ site.baseurl }}/talks.html" class="tab {% if page.id == "talks" %}selected{% endif %}">
       <i class="talk outline icon"></i> Talks and Presentations
     </a>
     <a href="/blog" target="_blank" class="tab">
