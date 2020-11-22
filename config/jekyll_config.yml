@@ -2,6 +2,7 @@ url: "https://rafaelbiriba.com" # the base hostname & protocol for your site, e.
 
 exclude:
   - lib
+  - config
 
 sass:
   sass_dir: _sass
